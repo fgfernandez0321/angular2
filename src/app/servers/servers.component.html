@@ -1,2 +1,19 @@
+<!-- Property binding example using disabled property. [property]="value" where the value cab be defined in component.ts -->
+<!-- Property binding uses [ ] notation example [disabled] where disabled is the property name -->
+<!-- Event binding uses () notation example (click) where click is the event name -->
+<button class="btn btn-primary"
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">Add Server</button>
+
+<!-- String interpolation -->
+<!--<p>{{ allowNewServer }}</p>-->
+
+<!-- Property binding example where the text can be replaced by property value -->
+<!--<p [innerText]="allowNewServer"></p>-->
+
+<!-- Do not mix property binding with string interpolation -->
+
+<p>{{ serverCreationStatus }}</p>
+
 <app-server></app-server>
 <app-server></app-server>
