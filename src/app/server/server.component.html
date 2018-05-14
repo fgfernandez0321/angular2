@@ -1,4 +1,6 @@
-<p>String Interpolation: Server with ID {{ serverId }} is {{ getServerStatus() }}.</p>
+<!--<p>String Interpolation: Server with ID {{ serverId }} is {{ getServerStatus() }}.</p>-->
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}">{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}.</p>
 
-<p>String Interpolation without pointing to properties via TypeScript: {{ 'Another example...' }}</p>
+<!--<p>String Interpolation without pointing to properties via TypeScript: {{ 'Another example...' }}</p>-->
 
